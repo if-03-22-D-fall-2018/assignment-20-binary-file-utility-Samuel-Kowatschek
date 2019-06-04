@@ -12,7 +12,7 @@ int main(int argc, char const *argv[]) {
   scanf("%s", last_name);
   printf("Age: ");
   scanf("%d", &age);
-  FILE* fd=fopen("student.dat","rw");
+  FILE* fd=fopen("student.dat","r+");
   int id;
 
   fseek(fd,0,SEEK_SET);
